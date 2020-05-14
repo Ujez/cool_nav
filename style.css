@@ -70,6 +70,8 @@ nav ul li i{
 nav ul li.btn{
     display: none;
 }
+nav ul li.btn:hover i:before{
+    content: '\f00d';
 
 @media all and (max-width: 900px) {
     nav{
@@ -77,7 +79,12 @@ nav ul li.btn{
     }
     nav ul li.items{
         width: 100%; /*use this in the other nav*/
+        display: none;
     }
+    nav ul li.items.show {
+        display: block;
+    }
+}
     nav ul li.btn{
         display: block;
     }
